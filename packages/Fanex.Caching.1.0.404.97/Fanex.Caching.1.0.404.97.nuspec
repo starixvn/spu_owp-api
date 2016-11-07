@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Fanex.Caching</id>
+    <version>1.0.404.97</version>
+    <title>Fanex.Caching</title>
+    <authors>Nexcel Solutions</authors>
+    <owners>Nexcel Solutions</owners>
+    <licenseUrl>http://license_url_here_or_delete_this_line/</licenseUrl>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fanex.Caching</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>Fanex Caching</tags>
+    <dependencies>
+      <dependency id="Fanex.Common" version="1.0.404.97" />
+      <dependency id="EnterpriseLibrary.Caching" version="5.0.414.0" />
+    </dependencies>
+  </metadata>
+</package>

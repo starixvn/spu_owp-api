@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Fanex.NAP.Core.Client</id>
+    <version>1.1.0.5</version>
+    <title>Fanex.NAP.Core.Client</title>
+    <authors>Nexcel Solutions</authors>
+    <owners>Nexcel Solutions</owners>
+    <projectUrl>https://nexdev.net/issues/53296</projectUrl>
+    <iconUrl>https://nexdev.net/issues/53296</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NAP API Client</description>
+    <releaseNotes>- Update for overide method HandleForbiddenAjaxRequest in NapAuthAttribute</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <language />
+    <tags>NAP API Client</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="6.0.8" />
+      <dependency id="Fanex.Common" version="1.1.0.1" />
+    </dependencies>
+  </metadata>
+</package>

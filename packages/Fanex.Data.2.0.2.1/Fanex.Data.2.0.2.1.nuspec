@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Fanex.Data</id>
+    <version>2.0.2.1</version>
+    <title>Fanex.Data</title>
+    <authors>jason.ly</authors>
+    <owners>jason.ly</owners>
+    <projectUrl>https://gitlab.nexcel.vn/infrastructure/fanex-data</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Data access wrapper for .Net, supports SQL Server Micro-ORM with Dapper dot net.</description>
+    <summary>Data access wrapper for .Net.</summary>
+    <releaseNotes>- Using SqlDbType, instead of DbType, to set the data types of auto-mapped parameters.
+- Fanex.Data now works well with parameters whose types are the new data types of SQL Server 2008 or later, like: TIME or DATE
+- GridReaderWrapper, returned by ObjectDb.QueryMultiple, has a new property named IsEnded, which identifies whether the reader went through all data tables returned by stored procedure.
+- The following methods are marked as obsolete:
+  + IObjectDb AddInParameter(string name, DbType dbType)
+  + IObjectDb AddInParameter(string name, DbType dbType, object value)
+  + IObjectDb AddOutParameter(string name, DbType dbType, int size)</releaseNotes>
+    <copyright>2016 Nexdev</copyright>
+    <language />
+    <tags>fanex.data sql server</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Dapper" version="1.50.2" />
+      </group>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="Dapper" version="1.50.2" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Dapper" version="1.50.2" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Transactions" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Transactions" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Transactions" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework4.6.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Fanex.Data.Repository</id>
+    <version>1.0.1</version>
+    <title>Fanex.Data.Repository</title>
+    <authors>jason.ly</authors>
+    <owners>jason.ly</owners>
+    <projectUrl>https://gitlab.nexcel.vn/infrastructure/fanex-data</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provide some common methods of a data access layer, using Fanex.Data as the under Micro-ORM.</description>
+    <summary>Provide some common methods of a data access layer, using Fanex.Data as the under Micro-ORM.</summary>
+    <releaseNotes>New methods added:
+- CriteriaBase:
+  + bool IsInvalid()
+- DynamicRepository:
+  + Tuple&lt;IEnumerable&lt;TFirst&gt;, IEnumerable&lt;TSecond&gt;&gt; FetchMultiple&lt;TFirst, TSecond&gt;(ICriteria criteria)
+  + Tuple&lt;IEnumerable&lt;TFirst&gt;, IEnumerable&lt;TSecond&gt;, IEnumerable&lt;TThird&gt;&gt; FetchMultiple&lt;TFirst, TSecond, TThird&gt;(ICriteria criteria)
+  + IEnumerable&lt;object&gt;[] FetchMultiple(ICriteria criteria, Type[] mappingTypes)
+  + Task&lt;Tuple&lt;IEnumerable&lt;TFirst&gt;, IEnumerable&lt;TSecond&gt;&gt;&gt; FetchMultipleAsync&lt;TFirst, TSecond&gt;(ICriteria criteria)
+  + Task&lt;Tuple&lt;IEnumerable&lt;TFirst&gt;, IEnumerable&lt;TSecond&gt;, IEnumerable&lt;TThird&gt;&gt;&gt; FetchMultipleAsync&lt;TFirst, TSecond, TThird&gt;(ICriteria criteria)
+  + Task&lt;IEnumerable&lt;object&gt;[]&gt; FetchMultipleAsync(ICriteria criteria, Type[] mappingTypes)</releaseNotes>
+    <copyright>2016 Nexdev</copyright>
+    <language />
+    <tags>fanex.data sql server repository</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Fanex.Data" version="2.0.2" />
+      </group>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="Fanex.Data" version="2.0.2" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Fanex.Data" version="2.0.2" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.6.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

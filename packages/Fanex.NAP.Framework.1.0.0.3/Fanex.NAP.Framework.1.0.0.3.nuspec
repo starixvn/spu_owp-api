@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Fanex.NAP.Framework</id>
+    <version>1.0.0.3</version>
+    <title>Fanex.NAP.Framework</title>
+    <authors>Nexcel Solutions</authors>
+    <owners>Nexcel Solutions</owners>
+    <licenseUrl>http://license_url_here_or_delete_this_line/</licenseUrl>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Fanex.NAP.Framework</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <language />
+    <tags>Fanex NAP</tags>
+    <dependencies>
+      <dependency id="Fanex.Data" version="0.5.404.62" />
+      <dependency id="Fanex.Common" version="1.0.404.97" />
+    </dependencies>
+  </metadata>
+</package>

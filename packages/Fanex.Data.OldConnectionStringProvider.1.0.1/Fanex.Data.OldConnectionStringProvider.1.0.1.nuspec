@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Fanex.Data.OldConnectionStringProvider</id>
+    <version>1.0.1</version>
+    <title>Fanex.Data.OldConnectionStringProvider</title>
+    <authors>jason.ly</authors>
+    <owners>jason.ly</owners>
+    <projectUrl>https://gitlab.nexcel.vn/infrastructure/fanex-data</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provide a custom connection string provider which encrypts passwords by the algorithm of Fanex.Data 0.5.x.</description>
+    <summary>Provide a custom connection string provider which encrypts passwords by the algorithm of Fanex.Data 0.5.x.</summary>
+    <releaseNotes>Ignore case sensitive when comparing connection strings</releaseNotes>
+    <copyright>2016 Nexdev</copyright>
+    <language />
+    <tags>fanex.data password encryption simple encryption</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0">
+        <dependency id="Fanex.Data" version="2.0.1" />
+      </group>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="Fanex.Data" version="2.0.1" />
+      </group>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Fanex.Data" version="2.0.1" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.0" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Configuration" targetFramework=".NETFramework4.6.1" />
+      <frameworkAssembly assemblyName="System.Security" targetFramework=".NETFramework4.6.1" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

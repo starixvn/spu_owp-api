@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Functions>
+  <Function Name ="Events">
+    <Setting Key="OWP_API_SelectedEventsGet" SpName="OWP_API_SelectedEventsGet" DbName="DBOWP.bodb_OWP.bodbOWPNet" />
+  </Function>
+</Functions>
